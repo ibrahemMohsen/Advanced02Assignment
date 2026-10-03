@@ -1,4 +1,6 @@
-﻿namespace Advanced02Assignment
+﻿using System.Threading.Channels;
+
+namespace Advanced02Assignment
 {
     internal class Program
     {
@@ -59,6 +61,24 @@
             //Console.WriteLine("--- Detailed Report ---");
             //Product.PrintReport(catalog, p => Console.WriteLine($"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}"));
             #endregion
+
+            #region Task 3.2
+            //var summaryList = Product.TransformProducts(catalog, p => $"{p.Name} (${p.Price})");
+            //Console.WriteLine("--- Summary List ---");
+            //foreach(string productSummary in summaryList)
+            //{
+            //    Console.WriteLine(productSummary);
+            //}
+
+            //var priceLabels = Product.TransformProducts(catalog, p => $"{p.Name}: {(p.Price > 100? "Expensive!": "Affordable")}");
+            //Console.WriteLine();
+            //Console.WriteLine("--- Price Labels ---");
+            //foreach (string productPriceLabels in priceLabels)
+            //{
+            //    Console.WriteLine(productPriceLabels);
+            //}
+            #endregion
+
         }
     }
 }

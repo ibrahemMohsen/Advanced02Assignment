@@ -30,6 +30,15 @@ namespace Advanced02Assignment
                 Action(product);
             }
         }
+        public static List<string> TransformProducts(List<Product> Products, Func<Product, string> Transform)
+        {
+            List<string> transformedProducts = new List<string>();
+            foreach(Product product in Products)
+            {
+                transformedProducts.Add(Transform(product));
+            }
+            return transformedProducts;
+        }
     }
 
 }

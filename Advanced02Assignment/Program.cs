@@ -79,6 +79,14 @@ namespace Advanced02Assignment
             //}
             #endregion
 
+            #region Task 3.3
+            //var lowStockProducts = Product.FilterProducts(catalog, p => p.Stock < 20);
+            //Console.WriteLine("--- Low-Stock Alert");
+            //foreach(Product product in lowStockProducts)
+            //{
+            //    Console.WriteLine($"[LOW STOCK] {product.Name}: only {product.Stock} left!");
+            //}
+            #endregion
         }
     }
 }

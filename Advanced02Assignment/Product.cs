@@ -39,6 +39,18 @@ namespace Advanced02Assignment
             }
             return transformedProducts;
         }
+        public static List<Product> FilterProducts(List<Product> products, Predicate<Product> predicate)
+        {
+            List<Product> matchingProducts = new List<Product>();
+            foreach(Product product in products)
+            {
+                if (predicate(product))
+                {
+                    matchingProducts.Add(product);
+                }
+            }
+            return matchingProducts;
+        }
     }
 
 }

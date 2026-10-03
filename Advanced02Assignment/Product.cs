@@ -23,6 +23,13 @@ namespace Advanced02Assignment
             }
             return matchingProducts;
         }
+        public static void PrintReport(List<Product> Products, Action<Product> Action)
+        {
+            foreach(Product product in Products)
+            {
+                Action(product);
+            }
+        }
     }
 
 }
